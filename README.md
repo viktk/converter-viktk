@@ -8,6 +8,8 @@ Développer avec la bibliothèque REACT
 
 Mise en place d\'une architecture de composants et du JSX, utilisation du préprocessor CSS : SASS.
 
+![résultat](result.webp)
+
 ## Développement
 
 Vous souhaitez exécuter une démo local
