@@ -6,7 +6,7 @@ Convetisseur de devises simple et s\'appuyant sur une liste de devises à traver
 
 Développer avec la bibliothèque REACT
 
-Mise en place d\'une architecture de composants et du JSX, utilisation du préprocessor CSS : SASS.'
+Mise en place d\'une architecture de composants et du JSX, utilisation du préprocessor CSS : SASS.
 
 ## Développement
 
