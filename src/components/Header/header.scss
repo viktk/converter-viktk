@@ -1,0 +1,48 @@
+@use 'src/styles/vars';
+
+.header {
+  background-color: vars.$color;
+  color: vars.$color-light;
+  padding: vars.$gutter * 2.5 0;
+  border-radius: 10px 10px 0 0;
+
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  margin-top: 1em;
+
+    &__content {
+      text-align: center;
+      input[type=number]::-webkit-outer-spin-button,
+      input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+
+      &__title {
+        font-weight: 700;
+        font-size: 2rem;
+      }
+
+      &__devise {
+        font-size: 1rem;
+        padding-top: vars.$gutter;
+      }
+
+      &__search {
+        padding-right: vars.$gutter;
+        margin: vars.$gutter* 0.4;
+        width: 60%;
+        height: 33px;
+        text-align: right;
+        border: none;
+        border-radius: 3px;
+        color: vars.$color;
+        font: inherit;
+
+        &::placeholder {
+          font-size: 0.8rem;
+          color: vars.$color-alt;
+        }
+      }
+    }
+  }

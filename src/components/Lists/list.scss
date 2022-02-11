@@ -1,0 +1,60 @@
+@use 'src/styles/vars';
+@use "sass:math";
+
+.lists {
+  background-color: vars.$color-light;
+  max-height: 250px;
+  color: vars.$color;
+  padding-top: vars.$gutter;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 300px;
+
+  &__title {
+    padding: vars.$gutter;
+    font-weight: bold;
+  }
+
+  &__search {
+    padding: vars.$gutter;
+    margin-top: vars.$gutter;
+    width: 100%;
+    border: none;
+    color: vars.$color;
+    font: inherit;
+    &::placeholder {
+      color: vars.$color-alt;
+    }
+  }
+
+  &__devises {
+    overflow:auto;
+
+    &::-webkit-scrollbar {
+      width: math.div(vars.$gutter, 2);
+    }
+
+      &::-webkit-scrollbar-track {
+      background-color: vars.$color-light;
+    }
+    
+      &::-webkit-scrollbar-thumb {
+      background-color: vars.$color;
+      border-radius: 5px;
+    }
+    
+    &__item {
+      border-top: 1px solid vars.$color-alt;
+      padding: vars.$gutter;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 1s;
+
+      &:hover {
+        background-color: vars.$color-alt;
+        transition-duration: 0.2s;
+      }
+    }
+  }
+}
