@@ -15,7 +15,7 @@ Mise en place d\'une architecture de composants et du JSX, utilisation du prépr
 Vous souhaitez exécuter une démo local
 
 ```bash
-git clone https://github.com/viktk
+git clone https://github.com/viktk/converter-viktk
 npm install
 npm start
 url : http://localhost:8080
